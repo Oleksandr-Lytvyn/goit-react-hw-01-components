@@ -1,5 +1,4 @@
 export function Statistics(props) {
-  console.log(props.stats);
   return (
     <section className="statistics">
       {props.title && <h2 className="title">{props.title}</h2>}

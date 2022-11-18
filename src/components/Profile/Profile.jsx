@@ -9,15 +9,15 @@ export function Profile(props) {
       </div>
 
       <ul className="stats">
-        <li>
+        <li className="stats__item">
           <span className="label">Followers</span>
           <span className="quantity">{props.stats.followers}</span>
         </li>
-        <li>
+        <li className="stats__item">
           <span className="label">Views</span>
           <span className="quantity">{props.stats.views}</span>
         </li>
-        <li>
+        <li className="stats__item">
           <span className="label">Likes</span>
           <span className="quantity">{props.stats.likes}</span>
         </li>

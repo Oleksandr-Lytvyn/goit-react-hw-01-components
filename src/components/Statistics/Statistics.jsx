@@ -5,7 +5,11 @@ export function Statistics(props) {
 
       <ul className="stat-list">
         {props.stats.map(item => (
-          <li className="item" key={item.id}>
+          <li
+            className="item"
+            key={item.id}
+            style={{ backgroundColor: generateLightColorRgb() }}
+          >
             <span className="label">{item.label}</span>
             <span className="percentage">{item.percentage}</span>
           </li>
@@ -13,4 +17,10 @@ export function Statistics(props) {
       </ul>
     </section>
   );
+}
+function generateLightColorRgb() {
+  const red = Math.floor(((1 + Math.random()) * 256) / 2);
+  const green = Math.floor(((1 + Math.random()) * 256) / 2);
+  const blue = Math.floor(((1 + Math.random()) * 256) / 2);
+  return 'rgb(' + red + ', ' + green + ', ' + blue + ')';
 }

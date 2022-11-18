@@ -6,8 +6,8 @@ import user from '../JSON/user';
 import data from '../JSON/data';
 import friends from '../JSON/friends';
 import transactions from '../JSON/transactions';
+import '../index.css';
 
-console.log(transactions);
 export const App = () => {
   return (
     <>
@@ -19,7 +19,7 @@ export const App = () => {
         stats={user.stats}
       />
       <Statistics stats={data} title={null} />
-      <FriendList friendsArr={friends} />
+      <FriendList friends={friends} />
       <TransactionHistory tansactions={transactions} />
     </>
   );

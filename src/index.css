@@ -13,3 +13,148 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+/* ----------PROFILE---------- */
+
+.profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+  padding-top: 30px;
+  padding-left: 10px;
+  padding-bottom: 15px;
+  margin: 0 auto;
+  background-color: rgb(185, 114, 114);
+  border-radius: 7%;
+  color: aliceblue;
+  margin-bottom: 40px;
+}
+
+.avatar {
+  display: block;
+  width: 50%;
+  margin: 0 auto;
+}
+
+.name {
+  font-size: 22px;
+}
+
+.description {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.stats {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  padding-left: 0;
+}
+
+.stats__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 12px;
+  background-color: rgb(227, 238, 244);
+  color: black;
+  padding: 5px;
+  border-radius: 3px;
+}
+
+/* --------STATISTICS----------- */
+
+.stat-list {
+  padding: 0;
+  width: 80%;
+  margin: 0 auto;
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  gap: 2px;
+  background-color: rgb(26, 142, 103);
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 20px;
+  margin-bottom: 40px;
+}
+
+.stat-list .item {
+  padding: 5px;
+  width: 40px;
+  height: 40px;
+  background-color: antiquewhite;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 50%;
+}
+
+/* --------FRIENDS--------- */
+
+.friend-list {
+  padding: 20px 0;
+  width: 80%;
+  margin: 0 auto;
+  background-color: rgb(231, 231, 231);
+  border-radius: 20px;
+  margin-bottom: 40px;
+}
+
+.friend-list .item {
+  width: 100;
+  height: 40px;
+  display: flex;
+  align-items: center;
+
+  margin-bottom: 20px;
+  /* background-color: rgb(111, 255, 133); */
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+.status {
+  margin-left: 20px;
+}
+
+.friend-list .item img {
+  width: 40px;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+
+/* -------TRANSACTIONS----- */
+
+table {
+  table-layout: fixed;
+  width: 80%;
+  border-collapse: collapse;
+  /* border: 3px solid purple; */
+  margin: 0 auto;
+  border-radius: 20px;
+}
+
+th,
+td {
+  padding: 10px;
+  text-align: center;
+}
+
+tbody tr:nth-child(odd) {
+  background-color: #c7d3e4;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #f2fdff;
+}
+
+table {
+  background-color: #33cfff;
+}
+
+thead {
+  height: 60px;
+}

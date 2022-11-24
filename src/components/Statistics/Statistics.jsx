@@ -1,17 +1,19 @@
+import css from '../Statistics/statistics.module.css';
+
 export function Statistics(props) {
   return (
-    <section className="statistics">
-      {props.title && <h2 className="title">{props.title}</h2>}
+    <section className={css.statistics}>
+      {props.title && <h2 className={css.title}>{props.title}</h2>}
 
-      <ul className="stat-list">
+      <ul className={css.statlist}>
         {props.stats.map(item => (
           <li
-            className="item"
+            className={css.item}
             key={item.id}
             style={{ backgroundColor: generateLightColorRgb() }}
           >
-            <span className="label">{item.label}</span>
-            <span className="percentage">{item.percentage}</span>
+            <span className={css.label}>{item.label}</span>
+            <span className={css.percentage}>{item.percentage}</span>
           </li>
         ))}
       </ul>

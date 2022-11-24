@@ -1,0 +1,29 @@
+.friend_list {
+  padding: 20px 0;
+  width: 80%;
+  margin: 0 auto;
+  background-color: rgb(231, 231, 231);
+  border-radius: 20px;
+  margin-bottom: 40px;
+}
+
+.friend_list .item {
+  width: 100;
+  height: 40px;
+  display: flex;
+  align-items: center;
+
+  margin-bottom: 20px;
+  /* background-color: rgb(111, 255, 133); */
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+.status {
+  margin-left: 20px;
+}
+
+.friend_list .item img {
+  width: 40px;
+  margin-right: 20px;
+  margin-left: 20px;
+}

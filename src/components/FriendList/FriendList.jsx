@@ -1,8 +1,9 @@
+import css from '../FriendList/friendList.module.css';
 import { RiFlagFill } from 'react-icons/ri';
 
 export function FriendList({ friends }) {
   return (
-    <ul className="friend-list">
+    <ul className={css.friend_list}>
       <FriendListItem friends={friends} />
     </ul>
   );
@@ -13,20 +14,20 @@ function FriendListItem({ friends }) {
     return (
       <li
         key={id}
-        className="item"
+        className={css.item}
         style={{ backgroundColor: isOnline ? '	#F0FFF0' : '	#FFF5EE' }}
       >
         {isOnline ? (
-          <span className="status" style={{ color: 'green' }}>
+          <span className={css.status} style={{ color: 'green' }}>
             <RiFlagFill />
           </span>
         ) : (
-          <span className="status" style={{ color: 'red' }}>
+          <span className={css.status} style={{ color: 'red' }}>
             <RiFlagFill />
           </span>
         )}
 
-        <img className="avatar" src={avatar} alt="User avatar" width="48" />
+        <img className={css.avatar} src={avatar} alt="User avatar" width="48" />
         <p className="name">{name}</p>
       </li>
     );

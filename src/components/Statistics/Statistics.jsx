@@ -1,4 +1,4 @@
-import css from '../Statistics/statistics.module.css';
+import css from '../Statistics/Statistics.module.css';
 
 export function Statistics(props) {
   return (

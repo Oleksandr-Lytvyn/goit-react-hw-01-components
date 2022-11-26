@@ -1,4 +1,4 @@
-import css from '../FriendList/friendList.module.css';
+import css from '../FriendList/FriendList.module.css';
 import { RiFlagFill } from 'react-icons/ri';
 
 export function FriendList({ friends }) {
